@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>question set</title>
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/style1.css') }}"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/8cad90313a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous" defer></script>
+    <!-- bootstrap script -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="heading">
+      <p>
+        Here i am going to ask you some question about the leaf that you
+        have.<br />
+        You have to observe that leaf and answer these folowing question
+        accordingly:-
+      </p>
+    </div >
+    <div class="question row">
+    
+      <div class="container-fluid col-lg-6">
+        <div class="question1">
+          <p>select leaf apices of leaf that you have ?</p>
+          <input
+            type="radio"
+            name="leaf_apicies"
+            id="accuminate"
+            class="input-hidden"
+            onclick="display()"
+            value="acuminate"
+          />
+          <label for="accuminate">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_apices/accuminate.jpg') }}"
+              alt="I'm happy"
+            />
+          </label>
+  
+          <input
+            type="radio"
+            name="leaf_apicies"
+            id="rounded"
+            class="input-hidden"
+            onclick="display()"
+            value="rounded"
+          />
+          <label for="rounded">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_apices/rounded.jpg') }}"
+              alt="I'm happy"
+            />
+          </label>
+  
+          <input
+            type="radio"
+            name="leaf_apicies"
+            id="obtuse"
+            class="input-hidden"
+            onclick="display()"
+            value="obtuse"
+          />
+          <label for="obtuse">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_apices/obtuse.jpg') }}"
+              alt="I'm happy"
+            />
+          </label>
+  
+          <input
+            type="radio"
+            name="leaf_apicies"
+            id="acute"
+            class="input-hidden"
+            onclick="display()"
+            value="acute"
+          />
+          <label for="acute">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_apices/acute.jpg') }}"
+              alt="I'm happy"
+            />
+          </label>
+        </div>
+        <div class="question2">
+          <p>select leaf basics of leaf that you have ?</p>
+          <input
+            type="radio"
+            name="leaf_bases"
+            id="cuneate"
+            class="input-hidden"
+            onclick="display()"
+            value="cuneate"
+          />
+          <label for="cuneate">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_bases/cuneate.jpg') }}"
+              alt="I'm sad"
+            />
+          </label>
+  
+          <input
+            type="radio"
+            name="leaf_bases"
+            id="rounded_bases"
+            class="input-hidden"
+            onclick="display()"
+            value="rounded"
+          />
+          <label for="rounded_bases">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_bases/rounded.jpg') }}"
+              alt="I'm happy"
+            />
+          </label>
+  
+          <input
+            type="radio"
+            name="leaf_bases"
+            id="cordate"
+            class="input-hidden"
+            onclick="display()"
+            value="cordate"
+          />
+          <label for="cordate">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_bases/cordate.jpg') }}"
+              alt="I'm happy"
+            />
+          </label>
+  
+          <input
+            type="radio"
+            name="leaf_bases"
+            id="acute_bases"
+            class="input-hidden"
+            onclick="display()"
+            value="acute"
+          />
+          <label for="acute_bases">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_bases/acute.jpg') }}"
+              alt="I'm happy"
+            />
+          </label>
+  
+          <input
+            type="radio"
+            name="leaf_bases"
+            id="auriculate"
+            class="input-hidden"
+            onclick="display()"
+            value="auriculate"
+          />
+          <label for="auriculate">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_bases/auriculate.jpg') }}"
+              alt="I'm happy"
+            />
+          </label>
+  
+          <input
+            type="radio"
+            name="leaf_bases"
+            id="attenuate"
+            class="input-hidden"
+            onclick="display()"
+            value="attenuate"
+          />
+          <label for="attenuate">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_bases/attenuate.jpg') }}"
+              alt="I'm happy"
+            />
+          </label>
+  
+          <input
+            type="radio"
+            name="leaf_bases"
+            id="hastate"
+            class="input-hidden"
+            onclick="display()"
+            value="hastate"
+          />
+          <label for="hastate">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_bases/hastate.jpg') }}"
+              alt="I'm happy"
+            />
+          </label>
+  
+          <input
+            type="radio"
+            name="leaf_bases"
+            id="oblique"
+            class="input-hidden"
+            onclick="display()"
+            value="oblique"
+          />
+          <label for="oblique">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_bases/oblique.jpg') }}"
+              alt="I'm happy"
+            />
+          </label>
+        </div>
+        <div class="question3">
+          <p>select leaf margin of leaf that you have ?</p>
+          <input type="radio" name="margin" id="serrate" class="input-hidden" onclick="display()"
+          value="serrate" />
+          <label for="serrate">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_margin/serrate.jpg') }}"
+              alt="I'm happy"
+            />
+          </label>
+  
+          <input type="radio" name="margin" id="entire" class="input-hidden" onclick="display()"
+          value="entire" />
+          <label for="entire">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_margin/entire.jpg') }}"
+              alt="I'm happy"
+            />
+          </label>
+  
+          <input type="radio" name="margin" id="undulate" class="input-hidden" onclick="display()"
+          value="undulate" />
+          <label for="undulate">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_margin/undulate.jpg') }}"
+              alt="I'm happy"
+            />
+          </label>
+  
+          <input type="radio" name="margin" id="sinuate" class="input-hidden" onclick="display()"
+          value="sinuate" />
+          <label for="sinuate">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_margin/sinuate.jpg') }}"
+              alt="I'm happy"
+            />
+          </label>
+  
+          <input
+            type="radio"
+            name="margin"
+            id="doubly_serrate"
+            class="input-hidden"
+            onclick="display()"
+          value="doubly_serrate"
+          />
+          <label for="doubly_serrate">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_margin/doubly_serrate.jpg') }}"
+              alt="I'm happy"
+            />
+          </label>
+  
+          <input type="radio" name="margin" id="spinose" class="input-hidden"onclick="display()"
+          value="spinose" />
+          <label for="spinose">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_margin/spinose.jpg') }}"
+              alt="I'm happy"
+            />
+          </label>
+  
+          <input type="radio" name="margin" id="serrulate" class="input-hidden" onclick="display()"
+          value="serrulate" />
+          <label for="serrulate">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_margin/serrulate.jpg') }}"
+              alt="I'm happy"
+            />
+          </label>
+  
+          <input type="radio" name="margin" id="lobed" class="input-hidden" onclick="display()"
+          value="lobed"/>
+          <label for="lobed">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_margin/lobed.jpg') }}"
+              alt="I'm happy"
+            />
+          </label>
+  
+          <input type="radio" name="margin" id="dentate" class="input-hidden"onclick="display()"
+          value="dentate" />
+          <label for="dentate">
+            <img
+              src="{{ url_for('static',filename='images/leaf part image/leaf_margin/dentate.jpg') }}"
+              alt="I'm happy"
+            />
+          </label>
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-6 result" >
+        <div >
+          <div id="imgresult" class="row"></div>
+        </div>
+      </div>
+    </div>
+   
+  </body>
+  <script src="{{url_for('static', filename='javascript/second.js')}}"></script>
+</html>
